@@ -1,0 +1,10 @@
+{
+  "FileVersion": 2,
+  "Id": "13288070-7f9e-4ef6-9106-13ffde7bf936",
+  "Items": [
+    {
+      "Id": "43565e13-c448-4d31-a133-83d8da10547b",
+      "Command": " > ../x64/Debug/output.txt"
+    }
+  ]
+}

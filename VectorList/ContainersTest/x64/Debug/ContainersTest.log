@@ -1,0 +1,97 @@
+﻿  pch.cpp
+  ContainersTest.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(1236,56): error C2794: 'value_type' : n'est membre d'aucune classe de base directe ou indirecte de 'std::iterator_traits<_Iter>'
+          with
+          [
+              _Iter=my::list<int,SpyAllocator<int>>::iterator
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5290): message : voir la référence à l'instanciation alias modèle 'std::_Iter_value_t<my::list<int,SpyAllocator<int>>::iterator>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336): message : voir les informations de référence sur le modèle de variable 'const bool _Memchr_in_find_is_safe<my::list<int,SpyAllocator<int> >::iterator,int>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5342): message : voir la référence à l'instanciation de la fonction modèle '_InIt std::_Find_unchecked<_InIt,_Ty>(const _InIt,const _InIt,const _Ty &)' en cours de compilation
+          with
+          [
+              _InIt=my::list<int,SpyAllocator<int>>::iterator,
+              _Ty=int
+          ]
+C:\Users\zizou\source\repos\VectorList\GPM1_ASSAD_J\VectorList\ContainersTest\ContainersTest.cpp(382): message : voir la référence à l'instanciation de la fonction modèle '_InIt std::find<my::list<int,SpyAllocator<int>>::iterator,int>(_InIt,const _InIt,const _Ty &)' en cours de compilation
+          with
+          [
+              _InIt=my::list<int,SpyAllocator<int>>::iterator,
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5290,1): error C2938: 'std::_Iter_value_t' : échec de spécialisation du modèle d'alias
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5290,53): error C3203: '_Is_character_or_bool' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Traits' ; type réel attendu
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(55,40): error C2825: '_Next' : doit être une classe ou un espace de noms lorsqu'il est suivi par '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(62): message : voir la référence à l'instanciation classe modèle 'std::_Conjunction<true,_First,int>' en cours de compilation
+          with
+          [
+              _First=std::is_integral<int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(166): message : voir la référence à l'instanciation classe modèle 'std::conjunction<std::is_integral<_Ty>,int>' en cours de compilation
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171): message : voir la référence à l'instanciation classe modèle 'std::disjunction<std::conjunction<std::is_integral<_Ty>,int>>' en cours de compilation
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5290): message : voir les informations de référence sur le modèle de variable 'const bool disjunction_v<std::conjunction<std::is_integral<int>,int> >' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(55,47): error C2510: '_Next' : class/struct/union doit figurer à gauche de '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(55,61): error C2065: 'value' : identificateur non déclaré
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(55,61): error C2975: '_First_value' : argument template non valide pour 'std::_Conjunction', expression constante évaluée au moment de la compilation attendue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(48): message : voir la déclaration de '_First_value'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(62,1): error C2516: 'std::_Conjunction<true,_First,int>::type' : classe de base non conforme
+          with
+          [
+              _First=std::is_integral<int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\type_traits(55): message : voir la déclaration de 'std::_Conjunction<true,_First,int>::type'
+          with
+          [
+              _First=std::is_integral<int>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(166,61): error C2039: 'value' n'est pas membre de 'std::conjunction<std::is_integral<_Ty>,int>'
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5290): message : voir la déclaration de 'std::conjunction<std::is_integral<_Ty>,int>'
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(166,1): error C2065: 'value' : identificateur non déclaré
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(166,1): error C2975: '_First_value' : argument template non valide pour 'std::_Disjunction', expression constante évaluée au moment de la compilation attendue
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(152): message : voir la déclaration de '_First_value'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171,69): error C2039: 'value' n'est pas membre de 'std::disjunction<std::conjunction<std::is_integral<_Ty>,int>>'
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171): message : voir la déclaration de 'std::disjunction<std::conjunction<std::is_integral<_Ty>,int>>'
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171,13): error C2065: 'value' : identificateur non déclaré
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171,13): error C2131: l'expression n'a pas été évaluée en constante
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xtr1common(171,13): message : nous avons rencontré une (sous-)expression non constante
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(1232,54): error C2794: 'reference' : n'est membre d'aucune classe de base directe ou indirecte de 'std::iterator_traits<_Iter>'
+          with
+          [
+              _Iter=my::list<int,SpyAllocator<int>>::iterator
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5295): message : voir la référence à l'instanciation alias modèle 'std::_Iter_ref_t<my::list<int,SpyAllocator<int>>::iterator>' en cours de compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5295,1): error C2938: 'std::_Iter_ref_t' : échec de spécialisation du modèle d'alias
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5295): error C2062: type 'unknown-type' inattendu
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336,1): error C3376: 'std::_Memchr_in_find_is_safe' : seuls les modèles de données membres static sont autorisés
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336,1): error C2993: 'unknown-type' : n'est pas un type valide pour le paramètre de modèle sans type '_Val'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336): error C2062: type 'unknown-type' inattendu
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336,1): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\xutility(5336,1): error C2059: erreur de syntaxe : ')'
+  Foo.cpp
+  main.cpp
+  SpyAllocator.cpp
+  Génération de code en cours...
